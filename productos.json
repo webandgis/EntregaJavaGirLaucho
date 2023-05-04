@@ -1,0 +1,42 @@
+[    {        
+"nombre": "Arroyaditos de Primavera",       
+ "categoria": "Vegano",       
+  "unidades": "6",       
+  "precio": "350$", 
+  "descripcion":"Relleno de vegetales: zanahoria, repollo y salsa de soja",      
+   "img": "img/spring_rolls2.jpg"    }, 
+   
+   { "nombre": "Tequeños Congelados",        
+   "categoria": "Vegetariano",      
+     "unidades": "6",       
+      "precio": "350$",
+      "descripcion":"Tequeños de queso llanero",     
+         "img": "img/tequeñosconge.jpg"   
+         },  
+           {   "nombre": "Tequeños Congelados de Platáno",      
+             "categoria": "Vegetariano",       
+              "unidades": "6",        
+             "precio": "400$", 
+             "descripcion":"Tequeños de queso llanero y platáno, una bomba de combinación",      
+              "img": "img/tequeñosconge.jpg"   
+             }, 
+                { "nombre": "Hamburguesas Veganas",        
+                "categoria": "Vegano",       
+                 "unidades": "2",    
+                    "precio": "250$",
+                    "descripcion":"Las tenés de remolacha,zanahoria o espinacas, super rendidoras",       
+                     "img": "img/hamburguV.jpg"    },
+
+                        { "nombre": "Falafel",        
+                        "categoria": "Vegano",        
+                        "unidades": "5",        
+                        "precio": "250$",     
+                        "descripcion":"Podes pedir nuestro Hummus casero, ideal para compartir",  
+                         "img": "img/fa3afe3.jpg"  
+                          }, 
+                           { "nombre": "Pan de queso",        
+                           "categoria": "Vegetariano",     
+                              "unidades": "6",     
+                                 "precio": "250$",       
+                                 "descripcion":"De queso muzzarella o llanero",
+                                  "img": "img/pandequeso.jpg"    }]

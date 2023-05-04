@@ -1,0 +1,39 @@
+/*paleta de colores */
+
+$color_1: purple;
+$color_2: #aaaaaa;
+$color_3: #cfbcf3;
+
+/*fuente */
+$font-family_1: Arial, Helvetica, sans-serif;
+$font-family_2: system-ui;
+/*Espacio */
+$espacioXChico:3px;
+$espacioChico:20px 30px;
+$espacioMedio:40px;
+$espacioGrande:60px;
+
+
+/*tamaño pantalla */
+
+$tablet: 768px;
+$desktop:992px;
+$desktopXG:1200px;
+
+/*background-color*/
+$background-color_1: white;
+$background-color_2: #F0F0F0;
+$background-color_3: inherit;
+$background-color_4: #cfbcf3;
+$background-color_5: #f6f7f9;
+$background-color_6: #fff;
+
+/*border-color*/
+$border-color_1: transparent transparent transparent #F0F0F0;
+$border-color_2: transparent #F0F0F0 transparent transparent;
+
+/*mixin*/
+@mixin wrap-v{
+    max-width: 1200px;
+    margin: 0 auto;
+}

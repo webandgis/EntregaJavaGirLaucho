@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Sweet Alert-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <!--Sweet Alert-->
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+     <!--CSS PROPIO-->
+   
+   <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/garzamora.jpg">
+
+    <!--Font family google-->
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+
+    <title>Garza Mora</title>
+    <meta name="Comida Caribeña" content="Comida tipica venezolana con variantes veganas">
+    <meta name="keywords" content="food,venezuelan">
+
+</head>
+
+<!--NAV-BAR-->
+<header>
+
+    <nav class="navbar navbar-expand-md navbar-dark  bd-navbar" >
+
+        <div class="container-fluid">
+             <!--LOGO GARZA MORA-->
+            <a class="navbar-brand" href="index.html" >
+               
+                <img src="img/garzamora.jpg" alt="" width="100" href="index.html">
+            </a>
+            <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#menu"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toogle navigation">
+            
+            
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+
+            <!--ELEMENTOS DEL MENÚ-->
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav mx-auto" style="width: 200px;" >
+                  <li class="nav-item"><a class="nav-link h6" style="color: purple;"  href="index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link h6" style="color: purple;" href="historia.html">Historia</a></li>
+                  <li class="nav-item"><a class="nav-link h6" style="color: purple;" href="servicio.html">Servicios</a></li>
+                  <li class="nav-item dropdown"><a class="nav-link h6 dropdown-toggle" style="color: purple;"  href="menu.html" 
+                      id="navbarDropdown" role="button" data-bs-toggle="dropdown">Menú</a>
+                      <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item text-white "href="menu.html">Team Salado</a></li>
+                          <li><a class="dropdown-item text-white" href="dulce.html">Team Dulce</a></li>
+                          <li><a class="dropdown-item text-white" href="receta.html">Recetas</a>
+                            <li><a class="dropdown-item text-white" href="congelados.html">Congelados</a></li>
+                          </li>
+
+                      </ul>
+                    </li>
+                    <hr class="text-white-50">
+
+                    <li class="nav-item"><a class="nav-link h6"  style="color: purple;"href="contacto.html">Contacto</a></li>
+
+                </ul>
+                <!--ENLACES REDES SOCIALES-->
+                <ul class="navbar-nav flex-row flex-wrap text-light">
+                    <li class="nav item col-6 col-md-auto p-3"  ><a href="#"><i id="btnShop" class="fas fa-shopping-cart" style="font-size:15px;color:purple"></i></a>
+                    
+                    </li>
+                    <li class="nav item col-6 col-md-auto p-3" ><a href="#"><i id="btnUser" class="fas fa-user" style="font-size:15px;color:purple"></i></a></li>
+                   <li class="nav item col-6 col-md-auto p-3"><a href="https://www.instagram.com/garza.mora/"><i class="fa fa-instagram" style="font-size:15px;color:purple"></i></a></li>
+                   <li class="nav item col-6 col-md-auto p-3"><a href="https://api.whatsapp.com/send?phone=092010787" class="btn-wsp" style="font-size:15px;color:purple" target="_blank">
+                   <i class="fa fa-whatsapp my float"></i> </a></li>
+             
+           </ul>
+          
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<main>
+    <section class="section bg-color">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-5 col-md-6 mx-auto">
+            <div class="sub-heading text-center">
+              <h1>Congelados</h1>
+            </div>
+          </div>
+        </div>
+  
+        <div class="input-group rounded" id="searchConge">
+          <input type="search" id="searchConge1" class="form-control rounded" placeholder="Buscar" aria-label="Search" aria-describedby="search-addon" />
+          <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search" id="searchIcon"></i>
+          </span>
+        </div>
+  
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="precioFilter">
+          <label class="form-check-label" for="flexRadioDefault1">Precio</label>
+  
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="unitFilter">
+          <label class="form-check-label" for="flexRadioDefault2">Unidades</label>
+  
+          <input class="form-check-input" type="radio" name="flexRadioDefault" checked id="categoFilter">
+          <label class="form-check-label" for="flexRadioDefault2">Categoría</label>
+  
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="nameFilter">
+          <label class="form-check-label" for="flexRadioDefault2">Nombre</label>
+        </div>
+  
+        <div class="row" id="serviceBoxContainer"></div>
+      </div>
+    </section>
+  </main>
+<!--FOOTER-->
+<footer id="footer">
+    <div class="container-fluid text-light">
+  
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h4>Garza Mora</h4>
+          <p>Servicio de catering privado</p> <br>
+          
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h4>Nuestras redes sociales</h4>
+          <ul class="navbar-nav flex-row flex-wrap text-light">
+  
+            <li class="nav item col-6 col-md-auto p-3" ><a href="https://www.facebook.com/Garzamoragourmet"><i class="fa fa-facebook" style="font-size:15px;color:purple"></i></a></li>
+           <li class="nav item col-6 col-md-auto p-3"><a href="https://www.instagram.com/garza.mora/"><i class="fa fa-instagram" style="font-size:15px;color:purple"></i></a></li>
+           <li class="nav item col-6 col-md-auto p-3"><a href="https://api.whatsapp.com/send?phone=092010787" class="btn-wsp" style="font-size:15px;color:purple" target="_blank">
+           <i class="fa fa-whatsapp my float"></i>
+           </a></li>
+     
+   </ul>
+  
+  
+  
+          
+        </div>
+        <div class="col-lg-3 col-md-6">
+  
+          <h4>Contactanos </h4>
+          <p>Dr. Joaquín Requena 2945 <br>
+          Montevideo, Uruguay 🌎<br>
+          <strong> Email:</strong> garzamorave@gmail.com
+          <br>
+        </p>
+        
+          
+        </div>
+        <div class="col-lg-3 col-md-6"> 
+  
+          
+  
+          <h4>News Letter</h4>
+          <p>Si queres enterarte de todas las novedades en nuestro menú suscribité</p> <hr>
+          <form action="post">
+            <input type="email" name="email" placeholder="garzamorave@gmail.com">
+            <input type="submit" value="Suscribite">
+          </form>
+  
+        </div>
+  
+        </div>
+      </div>
+  
+    </div>
+  
+  </footer>
+
+
+
+  <script src="https://kit.fontawesome.com/c604e8d5b8.js" crossorigin="anonymous"></script>
+
+  <!--Bosstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>   
+
+  <!--Sweet Alert-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+  <!---Main-->
+
+<script src="main.js"></script>
+<script src="productos.json"></script>
+
+</body>
+
+
+</html>
